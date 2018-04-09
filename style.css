@@ -1,0 +1,91 @@
+body {
+  background-color: #EEE;
+}
+
+form {
+  margin: 300px auto;
+  position: relative;
+  font-family: "Roboto";
+  width: 475px;
+  height: 92px;
+}
+
+.text_container {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 1000px;
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  caret-color: #8A98A9;
+  opacity: 0;
+  padding: 0 138px 0 26px;
+  box-sizing: border-box;
+}
+
+.hand_container, .fail_text {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.hand_container {
+  top: 22px;
+  left: 28px;
+}
+
+.hand {}
+
+.fail_text {
+  color: #D44;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 600;
+  top: 30px;
+  left: 46px;
+}
+
+.submit_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  /* width: script */
+  background-color: #D44;
+  border-radius: 1000px;
+}
+
+.submit {
+  top: 0;
+  right: 0;
+  text-align: center;
+  border-radius: inherit;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  margin: auto;
+  z-index: 1000;
+}
+
+.splash {
+  opacity: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #4D4;
+  top: 41px;
+  left: 41px;
+  border-radius: 100%;
+  z-index: 500;
+}
