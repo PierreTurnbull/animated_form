@@ -102,6 +102,7 @@ function plane_flies() {
 }
 
 function splash_moves(element, angle, x, y) {
+  element.style.display = "block";
   element.style.transform = "rotate(" + angle + "deg)";
   element.style.opacity = "1";
   setTimeout(function() {
@@ -109,6 +110,9 @@ function splash_moves(element, angle, x, y) {
     change_css_property(element, "left", 41 + y + "px", 0.5, "linear");
     setTimeout(() => (change_css_property(element, "opacity", "0", 0.5)), 15);
   }, 15);
+  setTimeout(() => (
+    element.style.display = "none"
+  ), 1000);
 }
 
 function submit_splashes() {
