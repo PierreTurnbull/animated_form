@@ -73,10 +73,10 @@ function get_new_input_changes() {
 }
 
 function get_new_input() {
-  fail_text.addEventListener("click", function() {
+  fail_text.addEventListener("mousedown", function() {
     get_new_input_changes();
   });
-  text.addEventListener("click", function() {
+  text.addEventListener("mousedown", function() {
     get_new_input_changes();
   });
 }
