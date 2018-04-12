@@ -79,6 +79,7 @@ form {
 }
 
 .splash {
+  display: none;
   opacity: 0;
   position: absolute;
   width: 15px;
