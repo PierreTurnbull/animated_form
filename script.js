@@ -1,32 +1,13 @@
-var state = {
-  stage: 0
-}
 
-var timeout = [];
-var submit_event = [];
-
-var form              = document.querySelector("form");
-var text_container    = document.querySelector(".text_container");
-var text              = document.querySelector(".text");
-var hand_container    = document.querySelector(".hand_container");
-var hand              = document.querySelector(".hand");
-var fail_text         = document.querySelector(".fail_text");
-var submit_container  = document.querySelector(".submit_container");
-var submit            = document.querySelector(".submit");
-var splashes          = document.querySelectorAll(".splash");
 
 submit_container.style.width = "475px";
 
 window.onload = function() {
-
   // initial changes
-
   change_css_property(form, "marginTop", "290px", 0.5);
 
   // changes based on user actions
-
   form.addEventListener("submit", (event) => (event.preventDefault()));
-
   form.addEventListener("submit", function() {
     if (state.stage === 0) {
       set_stage_1();
