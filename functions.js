@@ -75,8 +75,10 @@ function get_new_input_changes() {
 function get_new_input() {
   fail_text.addEventListener("mousedown", function() {
     get_new_input_changes();
+    setTimeout(() => (text.focus()), 0);
   });
   text.addEventListener("mousedown", function() {
+    text.focus();
     get_new_input_changes();
   });
 }
